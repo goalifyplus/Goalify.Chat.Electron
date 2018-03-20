@@ -2,7 +2,7 @@
     "name": "goalifychat",
     "productName": "Goalify.Chat",
     "description": "Goalify.Chat Native Cross-Platform Desktop Application via Electron.",
-    "version": "2.11.0-develop",
+    "version": "1.0.0-beta",
     "author": "Goalify.Chat Support <support@goalify.chat>",
     "copyright": "© 2018, Goalify.Chat",
     "homepage": "https://goalify.chat",
@@ -10,7 +10,7 @@
     "main": "app/background.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/goalifyplus/Goalify.Chat.Electron"
+        "url": "https://github.com/goalifyplus/Goalify.Chat.Electron.git"
     },
     "build": {
         "appId": "chat.goalify",
