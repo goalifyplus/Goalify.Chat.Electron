@@ -4,7 +4,7 @@ if (process.platform === 'darwin') {
     const NodeNotification = require('node-mac-notifier');
     window.Notification = class Notification extends NodeNotification {
         constructor (title, options) {
-            options.bundleId = `chat.rocket`;
+            options.bundleId = `chat.goalify`;
             super(title, options);
             this.addEventListener('click', (/*notification*/) => this.onclick());
         }

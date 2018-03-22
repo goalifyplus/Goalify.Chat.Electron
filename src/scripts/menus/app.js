@@ -16,7 +16,7 @@ const appTemplate = [
                 center: true,
                 maximizable: false,
                 minimizable: false,
-                title: 'About Rocket.Chat'
+                title: 'About Goalify.Chat'
             });
             win.loadURL('file://' + __dirname + '/about.html');
             win.setMenuBarVisibility(false);
