@@ -65,7 +65,7 @@
     },
     "publish": [{
       "provider": "github",
-      "owner": "Goalify.Chat",
+      "owner": "goalifyplus",
       "repo": "Goalify.Chat.Electron",
       "vPrefixedTagName": false
     }]
