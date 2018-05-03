@@ -145,7 +145,7 @@ The `servers.json` file will define what servers the client will connect to and 
 The file syntax is as follows:
 ```
 {
-  "Demo Rocket Chat": "https://demo.goalify.chat",
+  "Demo Rocket Chat": "https://public.goalify.chat",
   "Open Rocket Chat": "https://open.goalify.chat"
 }
 ```
