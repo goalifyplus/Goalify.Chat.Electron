@@ -250,7 +250,7 @@ class Servers extends EventEmitter {
     }
 
     setHostTitle (hostUrl, title) {
-        if (title === 'Goalify.Chat' && /https?:\/\/open\.goalify\.chat/.test(hostUrl) === false) {
+        if (title === 'Goalify Chat' && /https?:\/\/public\.goalify\.chat/.test(hostUrl) === false) {
             title += ' - ' + hostUrl;
         }
         const hosts = this.hosts;

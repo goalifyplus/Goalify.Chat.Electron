@@ -8,7 +8,6 @@ platform:
 branches:
   only:
     - master
-    - develop
 
 skip_tags: true
 
