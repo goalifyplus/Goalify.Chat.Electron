@@ -1,10 +1,10 @@
-# Rocket.Chat Desktop App [![Build Status](https://img.shields.io/travis/RocketChat/Rocket.Chat.Electron/master.svg)](https://travis-ci.org/RocketChat/Rocket.Chat.Electron) [![Build status](https://ci.appveyor.com/api/projects/status/k72eq3gm42wt4j8b?svg=true)](https://ci.appveyor.com/project/RocketChat/rocket-chat-electron) [![Project Dependencies](https://david-dm.org/RocketChat/Rocket.Chat.Electron.svg)](https://david-dm.org/RocketChat/Rocket.Chat.Electron) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/54ebf39732d14cb19a1a992b46bd0da6)](https://www.codacy.com/app/RocketChat/Rocket-Chat-Electron?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RocketChat/Rocket.Chat.Electron&amp;utm_campaign=Badge_Grade)
+# Goalify Chat Desktop App [![Build Status](https://img.shields.io/travis/goalifyplus/Goalify.Chat.Electron/master.svg)](https://travis-ci.org/goalifyplus/Goalify.Chat.Electron) [![Build status](https://ci.appveyor.com/api/projects/status/pc5air3gx1qujygp?svg=true)](https://ci.appveyor.com/project/trongthanh/goalify-chat-electron) [![Project Dependencies](https://david-dm.org/goalifyplus/Goalify.Chat.Electron.svg)](https://david-dm.org/goalifyplus/Goalify.Chat.Electron) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a559c40bf03349869f45fa21feca46d3)](https://www.codacy.com/app/trongthanh/Goalify.Chat.Electron?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=goalifyplus/Goalify.Chat.Electron&amp;utm_campaign=Badge_Grade)
 
-Desktop application for [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) available for macOS, Windows and Linux using [Electron](http://electron.atom.io).
+Desktop application for [Goalify.Chat](https://github.com/goalifyplus/Goalify.Chat) available for macOS, Windows and Linux using [Electron](http://electron.atom.io).
 
 # Download
 
-You can download the latest version from the [Releases](https://github.com/RocketChat/Rocket.Chat.Electron/releases/latest) page.
+You can download the latest version from the [Releases](https://github.com/goalifyplus/Goalify.Chat.Electron/releases/latest) page.
 
 # Install
 Launch the installer and follow the instructions to install.
@@ -30,8 +30,8 @@ Prerequisites:
 Now just clone and start the app:
 
 ```sh
-git clone https://github.com/RocketChat/Rocket.Chat.Electron.git
-cd Rocket.Chat.Electron
+git clone https://github.com/goalifyplus/Goalify.Chat.Electron.git
+cd Goalify.Chat.Electron
 yarn
 yarn start
 ```
@@ -132,9 +132,9 @@ yarn release
 
 It will start the packaging process for operating system you are running this command on. Ready for distribution file will be outputted to `dist` directory.
 
-Right now you can only create Windows installer when running Windows, the same is true for macOS. For Linux builds, you can use our [Docker image](https://hub.docker.com/r/rocketchat/electron.builder/) with the following commands:
+Right now you can only create Windows installer when running Windows, the same is true for macOS. For Linux builds, you can use our [Docker image](https://hub.docker.com/r/Goalifychat/electron.builder/) with the following commands:
 ```
-docker run --rm -ti -v ${PWD}:/project -v ${PWD##*/}-node-modules:/project/node_modules -v ~/.electron:/root/.electron rocketchat/electron.builder /bin/bash -l -c "yarn && yarn release -- --x64 --ia32 --p never"
+docker run --rm -ti -v ${PWD}:/project -v ${PWD##*/}-node-modules:/project/node_modules -v ~/.electron:/root/.electron Goalifychat/electron.builder /bin/bash -l -c "yarn && yarn release -- --x64 --ia32 --p never"
 ```
 
 All packaging actions are handled by [electron-builder](https://github.com/electron-userland/electron-builder). It has a lot of [customization options](https://github.com/electron-userland/electron-builder/wiki/Options), which you can declare under ["build" key in package.json file](https://github.com/szwacz/electron-boilerplate/blob/master/package.json#L2).
@@ -145,8 +145,8 @@ The `servers.json` file will define what servers the client will connect to and 
 The file syntax is as follows:
 ```
 {
-  "Demo Rocket Chat": "https://public.goalify.chat",
-  "Open Rocket Chat": "https://open.goalify.chat"
+  "Demo Goalify Chat": "https://public.goalify.chat",
+  "Open Rocket Chat": "https://open.rocket.chat"
 }
 ```
 
@@ -156,22 +156,22 @@ You can bundle a `servers.json` with the install package, the file should be loc
 
 ## Post-Install Configuration
 
-If you can't (or don't want to) bundle the file inside the app, you can create a `servers.json` in the user preferences folder which will overwrite the packaged one. The file should be located in the `%APPDATA%/Rocket.Chat+/` folder or the installation folder in case of a installation for all users (Windows only).
+If you can't (or don't want to) bundle the file inside the app, you can create a `servers.json` in the user preferences folder which will overwrite the packaged one. The file should be located in the `%APPDATA%/Goalify.Chat+/` folder or the installation folder in case of a installation for all users (Windows only).
 
 For Windows the full paths are:
 ```
-~\Users\<username>\AppData\Roaming\Rocket.Chat+\
-~\Program Files\Rocket.Chat+\Resources\
+~\Users\<username>\AppData\Roaming\Goalify.Chat+\
+~\Program Files\Goalify.Chat+\Resources\
 ```
 On MacOS the full path is:
 ```		
-~/Users/<username>/Library/Application Support/Rocket.Chat+/
-~/Applications/Rocket.Chat+.app/Contents/Resources/
+~/Users/<username>/Library/Application Support/Goalify.Chat+/
+~/Applications/Goalify.Chat+.app/Contents/Resources/
 ```
 On Linux the full path is:
 ```
-/home/<username>/.config/Rocket.Chat+/
-/opt/Rocket.Chat+/resources/
+/home/<username>/.config/Goalify.Chat+/
+/opt/Goalify.Chat+/resources/
 ```
 
 # Useful links
