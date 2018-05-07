@@ -6,7 +6,7 @@ const APP_NAME = remote.app.getName();
 const helpTemplate = [
     {
         label: i18n.__('Help_Name', APP_NAME),
-        click: () => remote.shell.openExternal('https://rocket.chat/docs')
+        click: () => remote.shell.openExternal('https://goalify.chat/docs')
     },
     {
         type: 'separator'
@@ -24,7 +24,7 @@ const helpTemplate = [
     },
     {
         label: i18n.__('Learn_More'),
-        click: () => remote.shell.openExternal('https://rocket.chat')
+        click: () => remote.shell.openExternal('https://goalify.chat')
     }
 ];
 

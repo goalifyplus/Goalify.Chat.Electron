@@ -1,19 +1,19 @@
 {
-  "name": "rocketchat",
-  "productName": "Rocket.Chat+",
-  "description": "Rocket.Chat Native Cross-Platform Desktop Application via Electron.",
-  "version": "2.10.5",
-  "author": "Rocket.Chat Support <support@rocket.chat>",
-  "copyright": "© 2018, Rocket.Chat",
-  "homepage": "https://rocket.chat",
+  "name": "goalifychat",
+  "productName": "Goalify.Chat",
+  "description": "Goalify.Chat Native Cross-Platform Desktop Application via Electron.",
+  "version": "1.0.1-beta",
+  "author": "Goalify.Chat Support <support@goalify.chat>",
+  "copyright": "© 2018, Goalify.Chat",
+  "homepage": "https://goalify.chat",
   "license": "MIT",
   "main": "app/background.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RocketChat/Rocket.Chat.Electron.git"
+    "url": "https://github.com/goalifyplus/Goalify.Chat.Electron.git"
   },
   "build": {
-    "appId": "chat.rocket",
+    "appId": "chat.goalify",
     "files": [
       "app/**/*",
       "node_modules/**/*",
@@ -26,7 +26,7 @@
     ],
     "mac": {
       "bundleVersion": "24",
-      "helperBundleId": "chat.rocket.electron.helper",
+      "helperBundleId": "chat.goalify.electron.helper",
       "category": "public.app-category.productivity",
       "target": [
         "dmg",
@@ -44,8 +44,8 @@
     },
     "appx": {
       "backgroundColor": "#2f343d",
-      "displayName": "Rocket.Chat",
-      "publisherDisplayName": "Rocket.Chat",
+      "displayName": "Goalify.Chat",
+      "publisherDisplayName": "Goalify.Chat",
       "languages": [
         "en-US",
         "en-GB",
@@ -55,7 +55,7 @@
     "linux": {
       "desktop": {
         "Categories": "GNOME;GTK;Network;InstantMessaging",
-        "StartupWMClass": "Rocket.Chat+",
+        "StartupWMClass": "Goalify.Chat",
         "MimeType": "x-scheme-handler/rocketchat"
       },
       "target": [
@@ -66,8 +66,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "RocketChat",
-        "repo": "Rocket.Chat.Electron",
+        "owner": "goalifyplus",
+        "repo": "Goalify.Chat.Electron",
         "vPrefixedTagName": false
       }
     ]
@@ -88,9 +88,9 @@
   },
   "dependencies": {
     "@paulcbetts/system-idle-time": "^1.0.4",
-    "electron-updater": "^2.20.1",
-    "fs-jetpack": "^1.2.0",
-    "lodash": "^4.17.5",
+    "electron-updater": "^2.21.8",
+    "fs-jetpack": "^1.3.0",
+    "lodash": "^4.17.10",
     "spellchecker": "^3.4.4"
   },
   "optionalDependencies": {
@@ -98,22 +98,22 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "conventional-changelog-cli": "^1.3.9",
-    "electron": "^1.8.2",
-    "electron-builder": "^19.56.0",
-    "electron-mocha": "^5.0.0",
-    "eslint": "^4.17.0",
+    "conventional-changelog-cli": "^1.3.22",
+    "electron": "^2.0.0",
+    "electron-builder": "^20.9.2",
+    "electron-mocha": "^6.0.1",
+    "eslint": "^4.19.1",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
-    "gulp-less": "^3.4.0",
+    "gulp-less": "^4.0.0",
     "gulp-plumber": "^1.2.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.0",
     "istanbul": "^0.4.5",
     "minimist": "^1.2.0",
-    "mocha": "^5.0.0",
-    "rollup": "^0.55.3",
-    "rollup-plugin-istanbul": "^2.0.0",
+    "mocha": "^5.1.1",
+    "rollup": "^0.58.1",
+    "rollup-plugin-istanbul": "^2.0.1",
     "spectron": "^3.8.0"
   },
   "devEngines": {
